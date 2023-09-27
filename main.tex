@@ -1,0 +1,51 @@
+%\documentclass[journal,10pt,twocolumn]{IEEEtran}
+\documentclass{IEEEtran}
+% \documentclass[draftcls,onecolumn,11pt]{IEEEtran}
+% Add the compsoc option for Computer Society conferences.
+%
+% If IEEEtran.cls has not been installed into the LaTeX system files,
+% manually specify the path to it like:
+% \documentclass[conference]{../sty/IEEEtran}
+
+\usepackage{amssymb,color}
+%\usepackage{flushend}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{longtable}
+% \input{mysymbol}
+
+
+\usepackage{cite}%
+\usepackage[cmex10]{amsmath}
+\usepackage{url}
+
+
+
+\begin{document}
+
+\title{Constrained cluster size for K-prototypes}
+
+\author{anonymous
+}
+
+% make the title area
+\maketitle
+
+
+\begin{abstract}
+In the real-world application, the data features are usually provided as the mixture of catogorical and numerical ones. The current
+K-prototypes can be applied to solve the clustering problem. However, the troditional K-prototypes has no control on the cluster size,
+which may lead to some clusters could contein very few nodes. To overcome this problem, we propse two algorithms based on the K-prototypes
+with cluster size constraints. The numerical results showed our proposed methods can cluster the nodes for a better summary of the unlabeled
+data.
+\end{abstract}
+
+\input{chapters/intro.tex}
+\input{chapters/problem_statement.tex}
+\input{chapters/alg.tex}
+\input{chapters/exp.tex}
+\input{chapters/conclusion.tex}
+
+\end{document}
